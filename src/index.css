@@ -1,13 +1,87 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: gainsboro;
+  padding: 5px;
+}
+
+
+.wrapper {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  background-color: #ccc;
+  padding: 7px;
+  border: 2px solid #f60606;
+}
+@media (max-width: 800px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+h1 {
+  font-size: 27px;
+  padding: 5px;
+  text-align: center;
+  color: #f60606;
+
+}
+h3{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+h2{
+  font-size: 20px;
+  color: rgb(5, 217, 146);
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+
+.incomeExpense{
+  height: 55px;
+}
+.incomeExpense p{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(226, 237, 247);
+}
+.income{
+  background-color: rgb(5, 217, 146);
+  flex: 50%;
+  text-align: center;
+  padding: 2px;
+}
+.expense{
+  background-color: #f60606;
+  flex: 50%;
+  text-align: center;
+  padding: 2px;
+}
+
+.transactionList ul{
+  list-style-type: none;
+  border: 1px solid #f60606;
+  width: 50%;
+  padding: 5px;
+}
+
+.transactionList ul button{
+  text-align: right;
+  color: #f60606;
 }
